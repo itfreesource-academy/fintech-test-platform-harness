@@ -1,6 +1,6 @@
 # FinTech Test Platform & Distributed Systems Harness
 
-[![FinTech Quality Gate & Test CI](https://github.com/vishalprajapati2k25/fintech-test-platform-harness/actions/workflows/ci.yml/badge.svg)](https://github.com/vishalprajapati2k25/fintech-test-platform-harness/actions)
+[![FinTech Quality Gate & Test CI](https://github.com/itfreesource-academy/fintech-test-platform-harness/actions/workflows/ci.yml/badge.svg)](https://github.com/itfreesource-academy/fintech-test-platform-harness/actions)
 ![Java 17](https://img.shields.io/badge/Java-17%20LTS-orange?logo=openjdk)
 ![REST Assured](https://img.shields.io/badge/REST%20Assured-5.4.0-brightgreen)
 ![Apache Kafka](https://img.shields.io/badge/Apache%20Kafka-3.7.0-black?logo=apachekafka)
@@ -107,7 +107,7 @@ fintech-test-platform-harness/
 ### Option A: Local Execution via Maven
 ```bash
 # Clone the repository
-git clone https://github.com/vishalprajapati2k25/fintech-test-platform-harness.git
+git clone https://github.com/itfreesource-academy/fintech-test-platform-harness.git
 cd fintech-test-platform-harness
 
 # Run all test suites
