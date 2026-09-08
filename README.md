@@ -57,10 +57,13 @@ flowchart TD
 ### 3. Dead Letter Queue (DLQ) & Fault Tolerance
 * Validates that corrupted, unparseable, or malformed transaction events are intercepted and routed to `fintech-payment-events-dlq` to prevent consumer group blocking.
 
-### 4. Shift-Left API Security & Negative Testing
+### 4. OAuth 2.0 Client Credentials Token Management
+* Built-in `OAuthTokenManager` implements RFC 6749 client credentials flow with thread-safe access token caching, automatic expiration detection (with 30s buffer), and automated renewal against WireMock identity providers.
+
+### 5. Shift-Left API Security & Negative Testing
 * Validates negative business logic (e.g., `422 Unprocessable Entity` on insufficient funds) and intercepts security regressions (`401 Unauthorized` on missing/expired Bearer tokens).
 
-### 5. Multi-Service Container Orchestration
+### 6. Multi-Service Container Orchestration
 * Features both a multi-stage `Dockerfile` and a `docker-compose.yml` defining an isolated multi-service test environment (Kafka Broker + KRaft, mock microservices, and test runner container).
 
 ---
@@ -72,10 +75,13 @@ fintech-test-platform-harness/
 ├── .github/
 │   └── workflows/
 │       └── ci.yml                 # Automated GitHub Actions CI pipeline
+├── .mvn/wrapper/                  # Maven Wrapper binaries
 ├── src/
 │   ├── main/java/io/defendloop/fintech/
 │   │   ├── api/
 │   │   │   └── PaymentApiClient.java     # Reusable REST Assured client wrapper
+│   │   ├── auth/
+│   │   │   └── OAuthTokenManager.java    # Thread-safe OAuth 2.0 token manager & cache
 │   │   ├── kafka/
 │   │   │   └── KafkaTestHarness.java     # Reusable Kafka event testing utility
 │   │   └── model/
@@ -83,10 +89,13 @@ fintech-test-platform-harness/
 │   └── test/java/io/defendloop/fintech/
 │       ├── api/
 │       │   └── PaymentApiTest.java       # WireMock + REST Assured test suite
+│       ├── auth/
+│       │   └── OAuthSecurityTest.java    # OAuth 2.0 Client Credentials & caching suite
 │       └── kafka/
 │           └── PaymentEventStreamTest.java # Kafka event stream & DLQ test suite
 ├── Dockerfile                     # Multi-stage containerized test runner
 ├── docker-compose.yml             # Local Kafka + Service orchestration
+├── mvnw / mvnw.cmd                # Cross-platform Maven Wrapper scripts
 ├── pom.xml                        # Maven dependency & plugin configuration
 └── README.md
 ```
