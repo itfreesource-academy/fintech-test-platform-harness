@@ -8,10 +8,10 @@
 ![JUnit 5](https://img.shields.io/badge/JUnit-5-red?logo=junit5)
 ![WireMock](https://img.shields.io/badge/WireMock-Virtualization-blue)
 ![WebSockets](https://img.shields.io/badge/WebSockets-Real--Time%20Stream-teal)
-![Allure & ReportPortal](https://img.shields.io/badge/Observability-Allure%20%7C%20ReportPortal%20%7C%20Grafana-ff6600)
-![Jira Xray & QMetry](https://img.shields.io/badge/Traceability-Xray%20%7C%20QMetry-0052cc)
+![Allure & Grafana](https://img.shields.io/badge/Observability-Allure%20%7C%20Grafana-ff6600)
+![Jira Xray](https://img.shields.io/badge/Traceability-Jira%20Xray-0052cc)
 
-An enterprise-grade test automation platform and testing harness designed for **distributed FinTech microservices**, **asynchronous Kafka & WebSocket payment streams**, and **containerized CI/CD pipelines** with **Allure, ReportPortal, Grafana**, and **Jira Xray / QMetry** enterprise traceability. 
+An enterprise-grade test automation platform and testing harness designed for **distributed FinTech microservices**, **asynchronous Kafka & WebSocket payment streams**, and **containerized CI/CD pipelines** with **Allure, ExtentReports, Grafana**, and **Jira Xray** enterprise traceability. 
 
 Engineered by **[Vishal Prajapati](https://defendloop.io)** (*Senior Automation & Tools Development Engineer*) to showcase production patterns for high-scale, mission-critical financial systems.
 
@@ -72,8 +72,8 @@ flowchart TD
 ### 7. Real-Time WebSocket & Payment Notification Validation
 * Features parallel test clients establishing WebSocket connections to test streaming transaction notifications, connection recovery, and backpressure handling.
 
-### 8. Enterprise Observability & Test Traceability (ReportPortal, Grafana, Xray & QMetry)
-* Integrates automated test execution telemetry with **ReportPortal** for ML-driven test analysis, pushes test health metrics to **Grafana**, and syncs pass/fail test results to **Jira Xray** and **QMetry Test Management**.
+### 8. Enterprise Observability & Test Traceability (Allure, Grafana & Jira Xray)
+* Integrates rich test reporting with **Allure** and **ExtentReports**, pushes test telemetry and latency metrics to **Grafana**, and syncs pass/fail test results to **Jira Xray** for statutory audit trails.
 
 ---
 
