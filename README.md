@@ -126,6 +126,16 @@ docker run --rm fintech-test-runner
 
 ---
 
+## 🔮 Future Roadmap & Upcoming Features (TODO)
+- [ ] **Confluent Cloud & Managed Kafka Integration:**
+  - Add SASL_SSL / API-key credential provider to run automated test suites against managed **Confluent Cloud** clusters alongside local KRaft containers.
+- [ ] **Confluent Schema Registry & Avro Serialization:**
+  - Integrate Confluent Schema Registry client to validate schema evolution (BACKWARD/FULL compatibility) and binary Avro/JSON schema validation across financial events.
+- [ ] **Consumer Group Lag & Rebalance Testing:**
+  - Implement automated test assertions verifying consumer group lag metrics and partition rebalance resiliency during simulated high-throughput transaction bursts.
+
+---
+
 ## 👤 Author
 * **Vishal Prajapati** — *Senior Associate: Test Automation & Tools Development Engineer*
 * **Portfolio:** [defendloop.io](https://defendloop.io)
