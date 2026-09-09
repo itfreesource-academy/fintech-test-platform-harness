@@ -6,9 +6,12 @@
 ![Apache Kafka](https://img.shields.io/badge/Apache%20Kafka-3.7.0-black?logo=apachekafka)
 ![Docker](https://img.shields.io/badge/Docker-Containerized-blue?logo=docker)
 ![JUnit 5](https://img.shields.io/badge/JUnit-5-red?logo=junit5)
-![Allure](https://img.shields.io/badge/Allure-Reporting-blueviolet)
+![WireMock](https://img.shields.io/badge/WireMock-Virtualization-blue)
+![WebSockets](https://img.shields.io/badge/WebSockets-Real--Time%20Stream-teal)
+![Allure & ReportPortal](https://img.shields.io/badge/Observability-Allure%20%7C%20ReportPortal%20%7C%20Grafana-ff6600)
+![Jira Xray & QMetry](https://img.shields.io/badge/Traceability-Xray%20%7C%20QMetry-0052cc)
 
-An enterprise-grade test automation platform and testing harness designed for **distributed FinTech microservices**, **asynchronous Kafka event streams**, and **containerized CI/CD pipelines**. 
+An enterprise-grade test automation platform and testing harness designed for **distributed FinTech microservices**, **asynchronous Kafka & WebSocket payment streams**, and **containerized CI/CD pipelines** with **Allure, ReportPortal, Grafana**, and **Jira Xray / QMetry** enterprise traceability. 
 
 Engineered by **[Vishal Prajapati](https://defendloop.io)** (*Senior Automation & Tools Development Engineer*) to showcase production patterns for high-scale, mission-critical financial systems.
 
@@ -65,6 +68,12 @@ flowchart TD
 
 ### 6. Multi-Service Container Orchestration
 * Features both a multi-stage `Dockerfile` and a `docker-compose.yml` defining an isolated multi-service test environment (Kafka Broker + KRaft, mock microservices, and test runner container).
+
+### 7. Real-Time WebSocket & Payment Notification Validation
+* Features parallel test clients establishing WebSocket connections to test streaming transaction notifications, connection recovery, and backpressure handling.
+
+### 8. Enterprise Observability & Test Traceability (ReportPortal, Grafana, Xray & QMetry)
+* Integrates automated test execution telemetry with **ReportPortal** for ML-driven test analysis, pushes test health metrics to **Grafana**, and syncs pass/fail test results to **Jira Xray** and **QMetry Test Management**.
 
 ---
 
