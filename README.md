@@ -13,7 +13,7 @@
 
 An enterprise-grade test automation platform and testing harness designed for **distributed FinTech microservices**, **asynchronous Kafka & WebSocket payment streams**, and **containerized CI/CD pipelines** with **Allure, ExtentReports, Grafana**, and **Jira Xray** enterprise traceability. 
 
-Engineered by **[Vishal Prajapati](https://defendloop.io)** (*Senior Automation & Tools Development Engineer*) to showcase production patterns for high-scale, mission-critical financial systems.
+Engineered by **[Vishal Prajapati](https://defendloop.io)** (*Senior Software Engineer | Java • Spring Boot • Microservices • Distributed Systems*) to showcase production patterns for high-scale, mission-critical financial systems.
 
 ---
 
@@ -146,7 +146,7 @@ docker run --rm fintech-test-runner
 ---
 
 ## 👤 Author
-* **Vishal Prajapati** — *Senior Associate: Test Automation & Tools Development Engineer*
+* **Vishal Prajapati** — *Senior Software Engineer | Java • Spring Boot • Microservices • Distributed Systems*
 * **Portfolio:** [defendloop.io](https://defendloop.io)
 * **LinkedIn:** [linkedin.com/in/vishalprajapati2k25](https://www.linkedin.com/in/vishalprajapati2k25)
 * **Education & Community:** Founder of [ITFreeSource Academy](https://academy.itfreesource.com)
